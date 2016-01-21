@@ -32,7 +32,7 @@
     }
 
     function toggleLed() {
-      if (clicks % 2 == 0) {
+      if (clicks % 3 == 0) {
         console.log("LED toggle on");
         $.post("https://api.particle.io/v1/devices/2d0027000c47343432313031/led?access_token=76ddfef9521cc8036c3c49ace313af66229cb926", {
           value: "on"
