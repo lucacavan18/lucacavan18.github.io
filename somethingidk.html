@@ -1,0 +1,39 @@
+<html>
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("#flip").mouseover(function() {
+        $("#panel").slideDown("slow");
+      });
+      $("#flip").mouseout(function() {
+        $("#panel").slideUp("fast");
+      });
+    });
+  </script>
+
+  <style>
+    #panel,
+    #flip {
+      padding: 5px;
+      text-align: center;
+      background-color: #EEAA33;
+      border: solid 1px #c3c3c3;
+    }
+
+    #panel {
+      padding: 200px;
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="flip">touch me</div>
+  <div id="panel">get off to go back</div>
+
+</body>
+
+</html>
