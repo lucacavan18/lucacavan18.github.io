@@ -3,16 +3,14 @@
 
 <head>
   <meta charset="utf-8">
-  <title>SICK BUTTON</title>
+  <title>Basic IOT button</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 </head>
 
-<body bgcolor=#660066>
+<body bgcolor="black">
   <button type="ledOn" onclick="ledOn()">On</button>
   <button type="ledOff" onclick="ledOff()">Off</button>
   <button type="toggleLed" onclick="toggleLed()">toggle</button>
-
-<img src="harrisong.JPG" alt="harri" style="width:400px;height228px;">
 
   <script>
     var clicks = 0;
@@ -20,7 +18,7 @@
     function ledOn() {
       console.log("LED is on");
       clicks=1;
-      $.post("https://api.particle.io/v1/devices/2d0027000c47343432313031/led?access_token=76ddfef9521cc8036c3c49ace313af66229cb926", {
+      $.post("https://api.particle.io/v1/devices/deviceID/led?access_token=", {
         value: "on"
       });
     }
@@ -28,7 +26,7 @@
     function ledOff() {
       console.log("LED is off");
       clicks=0;
-      $.post("https://api.particle.io/v1/devices/2d0027000c47343432313031/led?access_token=76ddfef9521cc8036c3c49ace313af66229cb926", {
+      $.post("https://api.particle.io/v1/devices/deviceID/led?access_token=", {
         value: "off"
       });
     }
@@ -36,14 +34,14 @@
     function toggleLed() {
       if (clicks % 2 == 0) {
         console.log("LED toggle on");
-        $.post("https://api.particle.io/v1/devices/2d0027000c47343432313031/led?access_token=76ddfef9521cc8036c3c49ace313af66229cb926", {
+        $.post("https://api.particle.io/v1/devices/deviceID/led?access_token=", {
           value: "on"
         });
         clicks++;
       } else {
         console.log("LED toggle off");
         clicks++;
-        $.post("https://api.particle.io/v1/devices/2d0027000c47343432313031/led?access_token=76ddfef9521cc8036c3c49ace313af66229cb926", {
+        $.post("https://api.particle.io/v1/devices/deviceID/led?access_token=", {
           value: "off"
         });
       }
