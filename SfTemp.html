@@ -1,0 +1,224 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+        background-image: url(mapa.jpg);
+        background-size: 15%;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="myCanvas" width="1500" height="925"></canvas>
+    <script>
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+      var centerX = canvas.width / 2;
+      var centerY = canvas.height / 2;
+      var radius = 70;
+
+      context.font = '15pt Times New Roman';
+      context.fillStyle = 'white';
+      context.fillText('The Mission', 1220, 70);
+
+      context.font = '15pt Times New Roman';
+      context.fillStyle = 'white';
+      context.fillText('Noe Valley', 1220, 120);
+
+      context.font = '15pt Times New Roman';
+      context.fillStyle = 'white';
+      context.fillText('North Beach', 1220, 170);
+
+      context.font = '15pt Times New Roman';
+      context.fillStyle = 'white';
+      context.fillText('Potrero Hill', 1220, 220);
+
+      context.font = '15pt Times New Roman';
+      context.fillStyle = 'white';
+      context.fillText('The Haight', 1220, 270);
+
+      context.font = '15pt Times New Roman';
+      context.fillStyle = 'white';
+      context.fillText('Downtown', 1220, 320);
+
+      context.font = '15pt Times New Roman';
+      context.fillStyle = 'white';
+      context.fillText('Ingleside', 1220, 370);
+
+      context.font = '15pt Times New Roman';
+      context.fillStyle = 'white';
+      context.fillText('The Sunset', 1220, 420);
+
+      context.font = 'Bold 30pt Times New Roman';
+      context.fillStyle = 'white';
+      context.fillText('San Francisco Temperatures', 1010, 800);
+
+      context.font = '25pt Times New Roman';
+      context.fillStyle = 'white';
+      context.fillText('by Harrison and Luca', 1160, 850);
+
+      context.beginPath();
+      context.rect(1180, 50, 30, 30);
+      context.fillStyle = 'red';
+      context.fill();
+      context.lineWidth = 0;
+      context.strokeStyle = '#003300';
+      context.stroke();
+
+      context.beginPath();
+      context.rect(1180, 100, 30, 30);
+      context.fillStyle = '#FA6407';
+      context.fill();
+      context.lineWidth = 0;
+      context.strokeStyle = '#003300';
+      context.stroke();
+
+      context.beginPath();
+      context.rect(1180, 150, 30, 30);
+      context.fillStyle = '#FA8602';
+      context.fill();
+      context.lineWidth = 0;
+      context.strokeStyle = '#003300';
+      context.stroke();
+
+      context.beginPath();
+      context.rect(1180, 200, 30, 30);
+      context.fillStyle = '#FAAC02';
+      context.fill();
+      context.lineWidth = 0;
+      context.strokeStyle = '#003300';
+      context.stroke();
+
+      context.beginPath();
+      context.rect(1180, 250, 30, 30);
+      context.fillStyle = '#FAC802';
+      context.fill();
+      context.lineWidth = 0;
+      context.strokeStyle = '#003300';
+      context.stroke();
+
+      context.beginPath();
+      context.rect(1180, 300, 30, 30);
+      context.fillStyle = '#FAF602';
+      context.fill();
+      context.lineWidth = 0;
+      context.strokeStyle = '#003300';
+      context.stroke();
+
+      context.beginPath();
+      context.rect(1180, 350, 30, 30);
+      context.fillStyle = '#C4FA02';
+      context.fill();
+      context.lineWidth = 0;
+      context.strokeStyle = '#003300';
+      context.stroke();
+
+      context.beginPath();
+      context.rect(1180, 400, 30, 30);
+      context.fillStyle = '#8CFC03';
+      context.fill();
+      context.lineWidth = 0;
+      context.strokeStyle = '#003300';
+      context.stroke();
+
+      context.beginPath();
+      context.arc(centerX-100, centerY, radius+380, 0, 2 * Math.PI, false);
+      context.fillStyle = '#8CFC03';
+      context.fill();
+      context.lineWidth = 0;
+      context.strokeStyle = '#003300';
+      context.stroke();
+
+      context.beginPath();
+      context.arc(centerX-100, centerY, radius+330, 0, 2 * Math.PI, false);
+      context.fillStyle = '#C4FA02';
+      context.fill();
+      context.lineWidth = 0;
+      context.strokeStyle = '#003300';
+      context.stroke();
+
+      context.beginPath();
+      context.arc(centerX-100, centerY, radius+280, 0, 2 * Math.PI, false);
+      context.fillStyle = '#FAF602';
+      context.fill();
+      context.lineWidth = 0;
+      context.strokeStyle = '#003300';
+      context.stroke();
+
+      context.beginPath();
+      context.arc(centerX-100, centerY, radius+230, 0, 2 * Math.PI, false);
+      context.fillStyle = '#FAC802';
+      context.fill();
+      context.lineWidth = 0;
+      context.strokeStyle = '#003300';
+      context.stroke();
+
+      context.beginPath();
+      context.arc(centerX-100, centerY, radius+180, 0, 2 * Math.PI, false);
+      context.fillStyle = '#FAAC02';
+      context.fill();
+      context.lineWidth = 0;
+      context.strokeStyle = '#003300';
+      context.stroke();
+
+      context.beginPath();
+      context.arc(centerX-100, centerY, radius+130, 0, 2 * Math.PI, false);
+      context.fillStyle = '#FA8602';
+      context.fill();
+      context.lineWidth = 0;
+      context.strokeStyle = '#003300';
+      context.stroke();
+
+      context.beginPath();
+      context.arc(centerX-100, centerY, radius+80, 0, 2 * Math.PI, false);
+      context.fillStyle = '#FA6407';
+      context.fill();
+      context.lineWidth = 0;
+      context.strokeStyle = '#003300';
+      context.stroke();
+
+      context.beginPath();
+      context.arc(centerX-100, centerY, radius+30, 0, 2 * Math.PI, false);
+      context.fillStyle = 'red';
+      context.fill();
+      context.lineWidth = 0;
+      context.strokeStyle = '#003300';
+      context.stroke();
+
+      context.font = '20pt Times New Roman';
+      context.fillStyle = 'white';
+      context.fillText('70', 710, 475);
+
+      context.font = '20pt Times New Roman';
+      context.fillStyle = 'white';
+      context.fillText('68', 760, 475);
+
+      context.font = '20pt Times New Roman';
+      context.fillStyle = 'white';
+      context.fillText('67', 810, 475);
+
+      context.font = '20pt Times New Roman';
+      context.fillStyle = 'white';
+      context.fillText('62', 860, 475);
+
+      context.font = '20pt Times New Roman';
+      context.fillStyle = 'white';
+      context.fillText('61', 910, 475);
+
+      context.font = '20pt Times New Roman';
+      context.fillStyle = 'white';
+      context.fillText('59', 960, 475);
+
+      context.font = '20pt Times New Roman';
+      context.fillStyle = 'white';
+      context.fillText('56', 1010, 475);
+
+      context.font = '20pt Times New Roman';
+      context.fillStyle = 'white';
+      context.fillText('53', 1060, 475);
+
+    </script>
+  </body>
+</html>
